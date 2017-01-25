@@ -15,6 +15,20 @@ t.children.push(new Tree('B'), new Tree('C'));
 t.children[0].children.push(new Tree('D'), new Tree('E'));
 t.children[1].children.push(new Tree('F'), new Tree('G'));
 
+// t.treeQueuer();
+
+// console.log(`Actual value was ${t.treeQueuer()}`);
+
+console.assert(t.treeQueuer() == 'A,B,C,D,E,F,G');
+console.log('Test is passing! Yays!');
+
+
+
+
+
+
+
+
 
 // console.log('new tree is:', t);
 // console.log('new tree val is', t.val);
@@ -24,7 +38,6 @@ t.children[1].children.push(new Tree('F'), new Tree('G'));
 
 // console.assert(t.treeQueuer() == 'A,B,C,D,E,F,G', `actual value was ${t.treeQueuer()}`);
 
-t.treeQueuer();
 
 
 // --- text example taken from stephen --- //
@@ -42,5 +55,5 @@ t.treeQueuer();
 // testTree.children.push(e);
 // testTree.children.push(d);
 //
-console.assert(testTree.breadthFirst() == 'A,B,c,e,d', `Actual value was ${testTree.breadthFirst()}`);
-console.log('Tests passing.');
+// console.assert(testTree.breadthFirst() == 'A,B,c,e,d', `Actual value was ${testTree.breadthFirst()}`);
+// console.log('Tests passing.');
