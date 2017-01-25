@@ -12,10 +12,10 @@ function Tree(val) {
 Tree.prototype.treeQueuer = function() {
   let q = new Queue();
   q.enqueue(this);
-  while(q.sll.head) {
+  while(q.head) {
     let cur = q.dequeue();
     console.log(cur.val);
-    cur.childern.forEach(function(child) {
+    cur.children.forEach(function(child) {
       q.enqueue(child);
     });
   }
